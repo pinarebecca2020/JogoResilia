@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: fantasy;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    /* deixa o site proporcional ao display da tela dos dispositivos*/
+    height: 100vh;
+    background: no-repeat center/ 80% url("C:/Users/adari/Documents/RebeccaResilia/coronga.jpg");
+    background-size: 100%;
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
+    text-align: center;
+}
+
+.bto-grid {
+    display: grid;
+    grid-template-columns: repeat ( auto);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.bto {
+    background-color: hsl(0, 100%, 50%);
+    border: 1px solid hsl(0, 100%, 35%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+
+.bto:hover {
+    border-color: black;
+}
